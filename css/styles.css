@@ -102,6 +102,7 @@ button {
     cursor: pointer;
 }
 
+/* media styles */
 
 @media only screen and (max-width: 1150px) {
     .hero-desktop {
@@ -117,13 +118,11 @@ button {
   
     .hero-mobile {
       display: block;
-      margin-top: 5%;
       width: 100%;
     }
   
     main {
       margin: auto;
-      text-align: center;
       width: 60%;
     }
   
@@ -133,7 +132,7 @@ button {
 }
   
 @media only screen and (max-width: 650px) {
-    html {
+    p {
       font-size: 8px;
     }
   
@@ -143,11 +142,12 @@ button {
   
     button {
       padding: 1.2rem;
+      width: 20%;
     }
 }
   
 @media only screen and (max-width: 450px) {
-    html {
+    p {
       font-size: 7px;
     }
   
