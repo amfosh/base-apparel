@@ -5,6 +5,8 @@
 
 body {
     background-image: url(../images/bg-pattern-desktop.svg);
+    padding: 0;
+    margin: 0;
 }
 
 main {
@@ -46,7 +48,7 @@ header {
 .logo {
     width: 15rem;
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 10%;
 }
   
 .hero-desktop {
@@ -84,9 +86,6 @@ input {
 }
 
 button {
-    /* position: absolute;
-    left: 70%; */
-    /* padding: 1.5rem; */
     font-size: 1rem;
     border: 1px solid hsl(0, 80%, 86%);
     border-radius: 5rem;
