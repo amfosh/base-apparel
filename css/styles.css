@@ -19,11 +19,13 @@ main {
 h1 {
     margin-top: 25%;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 5rem;
+    color: hsl(0, 6%, 24%);
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: 20px;
     text-transform: uppercase;
     margin-bottom: 0px;
+    width: 80%;
 }
 
 span {
@@ -34,8 +36,12 @@ span {
 
 p {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    line-height: 1.5rem;
+    max-width: 85%;
+    margin-top: 20px;
 }
 
 /* header styles */
@@ -52,8 +58,6 @@ header {
 }
   
 .hero-desktop {
-    margin: 0px;
-    width: auto;
     max-height: 100%;
     float: right;
 }
@@ -66,9 +70,9 @@ header {
 
 form {
     margin-top: 20px;
-    border: 2px solid hsl(0, 80%, 86%);
+    border: 2px solid #EBECF0;
     border-radius: 10rem;
-    width: 60%;
+    width: 90%;
     display: flex;
     flex-direction:row;
     padding:0px;
@@ -85,14 +89,71 @@ input {
     color: hsl(0, 74%, 74%);
 }
 
+input[type=text]::placeholder {
+    color: #ce9797;
+}
+
 button {
     font-size: 1rem;
     border: 1px solid hsl(0, 80%, 86%);
     border-radius: 5rem;
-    width: 30%;
+    width: 20%;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1150px) {
+    .hero-desktop {
+      width: 50%;
+      height: auto;
+    }
+}
+  
+@media only screen and (max-width: 980px) {
+    .hero-desktop {
+      display: none;
+    }
+  
+    .hero-mobile {
+      display: block;
+      margin-top: 5%;
+      width: 100%;
+    }
+  
+    main {
+      margin: auto;
+      text-align: center;
+      width: 60%;
+    }
+  
+    button {
+      left: 75%;
+    }
+}
+  
+@media only screen and (max-width: 650px) {
+    html {
+      font-size: 8px;
+    }
+  
+    h1 {
+      font-size: 6rem;
+    }
+  
+    button {
+      padding: 1.2rem;
+    }
+}
+  
+@media only screen and (max-width: 450px) {
+    html {
+      font-size: 7px;
+    }
+  
+    h1 {
+      font-size: 5rem;
+    }
+}
   
 
