@@ -118,11 +118,14 @@ button {
   
     .hero-mobile {
       display: block;
-      width: 100%;
+      margin-top: 5%;
+      text-align: center;
+      width: 60%
     }
   
     main {
       margin: auto;
+      text-align: center;
       width: 60%;
     }
   
@@ -132,7 +135,7 @@ button {
 }
   
 @media only screen and (max-width: 650px) {
-    p {
+    html {
       font-size: 8px;
     }
   
@@ -142,12 +145,11 @@ button {
   
     button {
       padding: 1.2rem;
-      width: 20%;
     }
 }
   
 @media only screen and (max-width: 450px) {
-    p {
+    html {
       font-size: 7px;
     }
   
