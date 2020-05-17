@@ -118,7 +118,7 @@ button {
   
     .hero-mobile {
       display: block;
-      /* margin-top: 5%; */
+      margin-top: 5%;
       text-align: center;
     }
   
@@ -148,8 +148,16 @@ button {
 }
   
 @media only screen and (max-width: 450px) {
+
+    main {
+        margin: auto;
+        text-align: center;
+        width: 60%;
+    }
+    
     html {
       font-size: 7px;
+      line-height: 1.5rem;
     }
   
     h1 {
